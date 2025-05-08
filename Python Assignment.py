@@ -231,23 +231,23 @@ if __name__ == "__main__":
 
 '''
         Question 6
-'''
 from abc import ABC, abstractmethod
-from typing import List, Iterator
+from typing import list,Iterator
 
 # Descriptor for attribute validation
-class PositiveInteger:
-   def __set_name__(self, owner, name):
-     self.name = name
+Class PositiveInteger:
+def __Set_name__(self,owner,name):
+    self.name = name
 
-    def __get__(self, instance, owner):
-       return instance.__dict__.get(self.name)
-
+    def__get__(self, instance, ownner):
+    return instance.__dict__.get(self.name)
+    
     def __set__(self, instance, value):
-       if not isinstance(value, int) or value <= 0:
-           raise ValueError(f"{self.name} must be a positive integer")
-        instance.__dict__[self.name] = value
+        if not isinstance(value,int) or value <=0:
+            raise ValueError(f"{self.name} must be a positive integer"
+                             instance.__dict__[self.name] = value
 
+''''
 # Abstract base class
 class Person(ABC):
    def __init__(self, name: str, age: int):
