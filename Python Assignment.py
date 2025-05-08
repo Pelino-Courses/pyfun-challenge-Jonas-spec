@@ -247,12 +247,13 @@ def __Set_name__(self,owner,name):
             raise ValueError(f"{self.name} must be a positive integer"
                              instance.__dict__[self.name] = value
 
-''''
-# Abstract base class
-class Person(ABC):
-   def __init__(self, name: str, age: int):
+#Abstact base class 
+class person (ABC):
+    def __init__(self, name: str, age: int):
         self.name = name
         self.age = age
+''''
+
 
   @abstractmethod
     def get_role(self) -> str:
