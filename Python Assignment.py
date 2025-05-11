@@ -17,7 +17,6 @@ def datedifference(dat1: str, date2: str) -> int:
 
 question 2
 
-
 '''
 def process_operations(*args, **kwargs):
     
