@@ -252,12 +252,11 @@ class person (ABC):
     def __init__(self, name: str, age: int):
         self.name = name
         self.age = age
+        @abstractmethod
+        def get_role(self) >- str:
+            pass
+            
 ''''
-
-
-  @abstractmethod
-    def get_role(self) -> str:
-    pass
 
 # Student and Instructor classes
 class Student(Person):
